@@ -27,11 +27,33 @@ MonoGame's Issues tab on their GitHub has a specific label for new contributors 
 Looking at the bug, it really was a simple fix. Pull all of the text generation code out of the Flush method and put it elsewhere. That's simple enough! See?
 
 {% highlight c# %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+/// <summary>
+/// All content has been written, so now finalize header, footer and anything else that needs finalizing
+/// </summary>
+public void FinalizeContent()
+{
+  // Write shared resources to the end of the body stream
+  WriteSharedResources();
+
+  using (var contentStream = new MemoryStream())
+  {
+    this.OutSteam = contentStream;
+    WriteTypeWriters();
+    bodyStream.Position = 0;
+    bodyStream.CopyTo(contentStream);
+    contentStream.Position = 0;
+
+    // etc.
+  }
+}
+
+/// <summary>
+/// Clears buffer using BinaryWriter's Flush method
+/// </summary>
+public override void Flush()
+{
+  base.Flush();
+}
 {% endhighlight %}
 
 That was pretty simple. I can mostly deduce what the solution was from the maintainer's response to the posted issue. Ideally, tossing this method in to the existing structure and making sure to call it before the current Flush method wherever it shows up, which happened to only be one.
