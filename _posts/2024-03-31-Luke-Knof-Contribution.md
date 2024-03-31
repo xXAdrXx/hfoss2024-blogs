@@ -36,7 +36,7 @@ Prism is forked from PolyMC, a similar launcher, which is itself forked from Mul
 Prism Launcher requires reading both the Code of Conduct and the Contributing guidelines before contributing. They then have several different locations to join, with Discord and Matrix being
 the main locations for developers to communicate.
 
-![Prism Launcher]()
+![Prism Launcher](../assets/2024-02-21-Fixing_a_Clippy_Bug/PenguingPrism.png)
 
 Upon joining Discord, it asked which roles I wanted, so I selected developement. This opened up all the different contribution channels to communicate in, such as translating, testing, developing, design, and web-dev.
 
@@ -56,13 +56,13 @@ exact steps for setting up Visual Studio.
 - The web-dev channel isn't talked in very much, so I didn't know how long it would take to get any responses. Fortunately, it was fast.
 - Linting markdown
 
-![Penguin Failed Lint]()
+![Penguin Failed Lint](../assets/2024-02-21-Fixing_a_Clippy_Bug/PenguingFailedLint.png)
 
 **Pull Request**
 
 As of March 31st, I have initiated a pull request with proper formatting. My initial pull request didn't pass the linting check, so I had to add a couple lines and reorganize the lists and images.
 It now only waits for approval from a contributor with access.
 
-![Penguin Pull Request Fail]()
+![Penguin Pull Request Fail](../assets/2024-02-21-Fixing_a_Clippy_Bug/PenguinFailedPR.png)
 
-![Penguin Pull Request]()
+![Penguin Pull Request](../assets/2024-02-21-Fixing_a_Clippy_Bug/PenguingSuccessPR.png)
