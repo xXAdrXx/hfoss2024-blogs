@@ -30,13 +30,13 @@ MonoGame's main way to communicate while contributing is their Discord. I person
 ## Choosing an Issue
 There were a lot of problems in the new contributor tag! The hard part came with choosing. Some seemed to take a little more knowledge of the project while others seemed like they may not even be issues at all. I chose [Issue #6661](https://github.com/MonoGame/MonoGame/issues/6661), which was originally submitted in 2019 and had only seen 1 post of conversation in its thread. MonoGame asks that you post that you're looking at an issue before you start working on it so there aren't overlaps in progress. 
 
-![Issue post by sharkist on GitHub discussing problem with the Content Writer](../assets/2024-03-26-monogame-bug-fix/Issue_Post.png)
-![Response from Jjagg diagnosing the problem as an issue with the Flush method](../assets/2024-03-26-monogame-bug-fix/First_Maintainer_Response.png)
+![Issue post by sharkist on GitHub discussing problem with the Content Writer](../assets/2024-04-04-monogame-bug-fix/Issue_Post.png)
+![Response from Jjagg diagnosing the problem as an issue with the Flush method](../assets/2024-04-04-monogame-bug-fix/First_Maintainer_Response.png)
 
 ## Fixing the Bug
 So I made my post and started looking at the problem. The biggest thing I wanted to know from the maintainers was if it was even still a problem. The initial issue had a dead link to an image and only a fleeting discussion on what the actual problem is on the technical end.
 
-![Post from h3allen stating interest in fixing the bug](../assets/2024-03-26-monogame-bug-fix/Interest_In_Fixing.png)
+![Post from h3allen stating interest in fixing the bug](../assets/2024-04-04-monogame-bug-fix/Interest_In_Fixing.png)
 
 Looking at the bug, it really was a simple fix. Pull all of the text generation code out of the Flush method and put it elsewhere. That's simple enough! See?
 
@@ -76,11 +76,11 @@ That was pretty simple. I can mostly deduce what the solution was from the maint
 ### Maintainer Response
 After I'm partway through the solution, one of the maintainers finally responds. This starts a discussion with the maintainer who initially posted on the issue about whether or not this is an actual problem.
 
-![Response from mrhelmut and Jjagg discussing if the issue still exists](../assets/2024-03-26-monogame-bug-fix/Second_Maintainer_Response.png)
+![Response from mrhelmut and Jjagg discussing if the issue still exists](../assets/2024-04-04-monogame-bug-fix/Second_Maintainer_Response.png)
 
 After their conversation and agreement that this was, in fact, still an issue, I made a quick post about what the solution should look like. I mostly just wanted to ensure I actually understood what the problem was and how to solve it, since I've never worked on a content writer before and I didn't know how their actual system worked. 
 
-![Response from h3allen discussing solutions and asking for clarification](../assets/2024-03-26-monogame-bug-fix/Request_For_Clarification.png)
+![Response from h3allen discussing solutions and asking for clarification](../assets/2024-04-04-monogame-bug-fix/Request_For_Clarification.png)
 
 I never got a response.
 
