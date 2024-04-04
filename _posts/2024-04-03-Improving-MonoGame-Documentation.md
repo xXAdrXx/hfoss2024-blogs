@@ -17,29 +17,29 @@ MonoGame is a large community as a whole. It has a few active contributors outsi
 
 When looking at issues to pick once I decided on MonoGame, I first looked at the "Good First Issues" tab. It had some good options, but quite a few were several years old. Mainly because a lot of them are very minor fixes or heavily tutorial and documentation based. These get skimmed over by more experienced contributors in order to let newer contributors add to them. However, I was able to find one that was posted fairly recently. It was posted a week before I saw it. It was a potential issue with the asset creation tool that utilized a PathHelper class. It seemed like a very small issue at first, and figured it'd get processed a lot quicker as it was more critical to the framework if there was a bug. The issue was reported as a possible bug due to how the GetRelativePath() function would have extra symbols that would mess up creating a path inside the project.
 
-![A photo of the issue I picked](../assets/2024-04-03-Improving-MonoGame-Documentation/Issue-1-Intro-Part1.png)
-![A second photo of the issue I picked](../assets/2024-04-03-Improving-MonoGame-Documentation/Issue-1-Intro-Part2.png)
+![A photo of the issue I picked](../assets/2024-04-03-Improving-MonoGame-Documentation/Issue-1-Intro-Part1.PNG)
+![A second photo of the issue I picked](../assets/2024-04-03-Improving-MonoGame-Documentation/Issue-1-Intro-Part2.PNG)
 
-![A photo of me claiming the issue](../assets/2024-04-03-Improving-MonoGame-Documentation/Issue-1-Claim.png)
+![A photo of me claiming the issue](../assets/2024-04-03-Improving-MonoGame-Documentation/Issue-1-Claim.PNG)
 
 # How was it Fixed?
 
 The first step was to see if the issue existed and what the PathHelper was spitting out. This was done by using the Debug.WriteLine("string") function. What this function does is it prints out the given string to the output console in debug mode. This is perfect as it allows me to see the paths at different points in the asset creation process. What I noticed, however, is that the extreneous symbols that should be there causing issues, weren't. This went against what the issue on GitHub said was supposed to happen. After reading through some relevent Microsoft documentation on the URI (Uniform Resource Identifier) in the .NET framework, it is working as intended and the issue didn't exist in the mainline .NET version used for the framework. In this case, this is .NET 8. Granted, the issue did say it was a potential bug afterall. I reported these findings to the GitHub issue and waited for a response. This waiting became a blocker.
 
-![A photo of my findings being stated on the GitHub issue](../assets/2024-04-03-Improving-MonoGame-Documentation/Issue-1-Solution.png)
+![A photo of my findings being stated on the GitHub issue](../assets/2024-04-03-Improving-MonoGame-Documentation/Issue-1-Solution.PNG)
 
 # Now What?
 After a brief email chain with SJ and Adrian, we agreed that I should do a different issue since no PR was submitted as a result. This led me to work towards the tutorial and documentation side of things. So, as a result, I went back and looked through the project posted on the GitHub called "Call to Improve Tutorials." This project has a list of issues where documentation and tutorials that need to be done or be improved go. I noticed this one issue from 2019 that was still not done. It was an issue requesting a tutorial for the Joystick class. I know a bit about programming for different input devices, so I figured I'd look at the relevent API documentation and work on it. 
 
-![A photo of the second issue I picked](../assets/2024-04-03-Improving-MonoGame-Documentation/Issue-2-Intro.png)
+![A photo of the second issue I picked](../assets/2024-04-03-Improving-MonoGame-Documentation/Issue-2-Intro.PNG)
 
-![A photo of me claiming the issue](../assets/2024-04-03-Improving-MonoGame-Documentation/Issue-2-Claim.png)
+![A photo of me claiming the issue](../assets/2024-04-03-Improving-MonoGame-Documentation/Issue-2-Claim.PNG)
 
 # Fixing it Part 2
 
 After reading through the documentation, I made a test project to test out some code in order to write up the tutorial with code samples as the other tutorials on the website do. I also read through the writing style guidelines in order to ensure that my tutorial would have the best shot at being approved. Once I got the input working for the test project, I used the pre-existing introductory tutorial series as a place to add this tutorial. Since the fifth tutorial goes over basic input, I figured it would fit best there. Since it was simply editing and adding a stylized tutorial to an existing one that follows the same style, there wasn't anything blocking me for this issue. I sent in the PR on 4/3/2024 and I am blocked by waiting for a response.
 
-![A photo of my posted pull request with my tutorial update](https://samercer2002.github.io/assets/2024-04-03-Improving-MonoGame-Documentation/Issue-2-PR.png)
+![A photo of my posted pull request with my tutorial update](../assets/2024-04-03-Improving-MonoGame-Documentation/Issue-2-PR.PNG)
 
 # Resolution
 
