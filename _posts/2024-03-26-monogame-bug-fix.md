@@ -24,10 +24,12 @@ MonoGame has a few channels the general community can access to see updates, bug
 
 MonoGame has a [great guide](https://github.com/MonoGame/MonoGame/blob/develop/CONTRIBUTING.md) on how to contribute to the project, but there isn't a Code of Conduct on their GitHub. The foundation running MonoGame has [bylaws](https://monogame.net/foundation/), but that's as much as I can find even related to a community standard.
 
-MonoGame's main way to communicate while contributing is their Discord. I personally didn't join because it appeared to be a server focused both on the development and usage of MonoGame. Silas, who also chose to contribute to MonoGame did join the server and gave me a little insight onto how it was set up. Should I have probably joined? Yes. Would it have personally helped me? Probably not. 
+MonoGame's main way to communicate while contributing is their Discord. I personally didn't join because it appeared to be a server focused both on the development and usage of MonoGame and I don't particularly enjoy being in giant servers. Silas, who also chose to contribute to MonoGame did join the server and gave me a little insight onto how it was set up. Should I have probably joined? Yes. Would it have personally helped me? Probably not. 
 
 ## Choosing an Issue
 There were a lot of problems in the new contributor tag! The hard part came with choosing. Some seemed to take a little more knowledge of the project while others seemed like they may not even be issues at all. I chose [Issue #6661](https://github.com/MonoGame/MonoGame/issues/6661), which was originally submitted in 2019 and had only seen 1 post of conversation in its thread. MonoGame asks that you post that you're looking at an issue before you start working on it so there aren't overlaps in progress. 
+
+![Issue post by sharkist on GitHub discussing problem with the Content Writer](https://h3allen.github.io/assets/2024-03-26-monogame-bug-fix/Issue_Post.png)
 
 ## Fixing the Bug
 So I made my post and started looking at the problem. The biggest thing I wanted to know from the maintainers was if it was even still a problem. The initial issue had a dead link to an image and only a fleeting discussion on what the actual problem is on the technical end.
