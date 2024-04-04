@@ -28,7 +28,8 @@ Looking at the bug, it really was a simple fix. Pull all of the text generation 
 
 {% highlight c# %}
 /// <summary>
-/// All content has been written, so now finalize header, footer and anything else that needs finalizing
+/// All content has been written, so now finalize header, 
+/// footer and anything else that needs finalizing
 /// </summary>
 public void FinalizeContent()
 {
@@ -59,9 +60,9 @@ public override void Flush()
 That was pretty simple. I can mostly deduce what the solution was from the maintainer's response to the posted issue. Ideally, tossing this method in to the existing structure and making sure to call it before the current Flush method wherever it shows up, which happened to only be one.
 
 ### Uh Oh...
-Building is awful. I need MonoGame stable on my laptop but I also need to tear it out and rebuild it with my version to ensure my bug fix actually fixed the "bug."
+Building is awful. I need MonoGame stable on my laptop for grading but I also need to tear it out and rebuild it with my version to ensure my bug fix actually fixed the "bug."
 
-Well, I'd started fixing the bug but...
+Well, I'd already started fixing the bug but...
 - I didn't have a concrete example of what the bug was from the original issue posted, so I couldn't exactly test it and know it was solved
 - The image originally posted with the issue is a dead link and I can't see it
 - The current maintainers hadn't paid any attention to this issue in years and my interest in solving it caused them to take notice
