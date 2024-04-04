@@ -4,6 +4,7 @@ layout: post
 # than can be represented in the filename, uncomment the following line
 # and specify a custom title
 # title:  "Sample Blog Post"
+# https://jekyllrb.com/docs/home
 
 # Uncomment only one of the below categories
 categories: 
@@ -29,12 +30,13 @@ MonoGame's main way to communicate while contributing is their Discord. I person
 ## Choosing an Issue
 There were a lot of problems in the new contributor tag! The hard part came with choosing. Some seemed to take a little more knowledge of the project while others seemed like they may not even be issues at all. I chose [Issue #6661](https://github.com/MonoGame/MonoGame/issues/6661), which was originally submitted in 2019 and had only seen 1 post of conversation in its thread. MonoGame asks that you post that you're looking at an issue before you start working on it so there aren't overlaps in progress. 
 
-![Issue post by sharkist on GitHub discussing problem with the Content Writer](https://h3allen.github.io/assets/2024-03-26-monogame-bug-fix/Issue_Post.png)
+![Issue post by sharkist on GitHub discussing problem with the Content Writer](../assets/2024-03-26-monogame-bug-fix/Issue_Post.png)
+![Response from Jjagg diagnosing the problem as an issue with the Flush method](../assets/2024-03-26-monogame-bug-fix/First_Maintainer_Response.png)
 
 ## Fixing the Bug
 So I made my post and started looking at the problem. The biggest thing I wanted to know from the maintainers was if it was even still a problem. The initial issue had a dead link to an image and only a fleeting discussion on what the actual problem is on the technical end.
 
-IMAGE TIME
+![Post from h3allen stating interest in fixing the bug](../assets/2024-03-26-monogame-bug-fix/Interest_In_Fixing.png)
 
 Looking at the bug, it really was a simple fix. Pull all of the text generation code out of the Flush method and put it elsewhere. That's simple enough! See?
 
@@ -74,11 +76,11 @@ That was pretty simple. I can mostly deduce what the solution was from the maint
 ### Maintainer Response
 After I'm partway through the solution, one of the maintainers finally responds. This starts a discussion with the maintainer who initially posted on the issue about whether or not this is an actual problem.
 
-IMAGE TIME
+![Response from mrhelmut and Jjagg discussing if the issue still exists](../assets/2024-03-26-monogame-bug-fix/Second_Maintainer_Response.png)
 
 After their conversation and agreement that this was, in fact, still an issue, I made a quick post about what the solution should look like. I mostly just wanted to ensure I actually understood what the problem was and how to solve it, since I've never worked on a content writer before and I didn't know how their actual system worked. 
 
-IMAGE
+![Response from h3allen discussing solutions and asking for clarification](../assets/2024-03-26-monogame-bug-fix/Request_For_Clarification.png)
 
 I never got a response.
 
@@ -87,12 +89,3 @@ After two weeks of hoping that maybe they'd suddenly respond with some more info
 
 ## Conclusion
 It was certainly an experience I had! Frustrating to be stuck in quasi-limbo because the maintainers weren't paying attention to the problem. MonoGame has larger issues and feature requests open at the moment (including some bounties), so it makes sense that I wasn't a high priority. As of right now, my pull request hasn't been looked at and I don't exactly hold a high hope that it will any time soon. Some PR's have been open for years with no updates and I may just be the next one on the list. 
-
-![a meme depicting a cartoon person screaming "OPEN SOURCE"](https://ankitrokdeonsns.github.io/assets/img/open_source.jpeg)
-
-
-[Here](https://www.markdownguide.org/basic-syntax/#images-1) is a link to more documentation on markdown images.
-
-[Here](https://www.markdownguide.org/extended-syntax/#tables) is a link to more documentation on markdown tables.
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
