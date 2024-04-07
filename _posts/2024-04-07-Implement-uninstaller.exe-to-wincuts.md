@@ -51,13 +51,13 @@ First, I started by reading the current code of the project and understanding wh
 Then, I coded what an uninstaller would need, including the UI, uninstalling feature, and the feature of asking the user to quit the main application to ensure the uninstaller would function properly.
 ![image](https://github.com/wy8933/hfoss2024-blogs/assets/112401719/67540ed8-3630-4ff9-9ae0-1167a6e1287e)
 
-#Blocker
+# Blocker
 During the development, everything went smoothly, but in the end, when I needed to test the software, I faced a major problem that I couldn't find a solution for on the internet. So, I decided to open a discussion to seek help from the community
 ![image](https://github.com/wy8933/hfoss2024-blogs/assets/112401719/f8453f62-0a85-4f25-80b8-f67feddcf769)
 
 LyubomirT, who is also the owner of the project, quickly responded to the discussion I opened and provided me with the perfect solution
 ![image](https://github.com/wy8933/hfoss2024-blogs/assets/112401719/7b2e4ae9-3e19-4976-b0ee-5ec497762ee7)
 
-#Pull Request
+# Pull Request
 As of the writing of this blog post, the PR opened has not been accepted yet since there are still some small problems with my solution, which I am still working on now, 
 [Link to pull request](https://github.com/LyubomirT/wincuts/pull/10)
