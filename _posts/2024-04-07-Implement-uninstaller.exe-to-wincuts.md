@@ -44,7 +44,7 @@ The issue that I investigated in this project was Creating an uninstaller for th
 
 ![Screenshot 2024-04-07 131600](https://github.com/wy8933/hfoss2024-blogs/assets/112401719/c48b0db1-2885-4440-9b6c-709a1237023e)
 
-#Contribution process
+# Contribution process
 First, I started by reading the current code of the project and understanding what library was used. Then I download the libraries that was needed for the project.
 ![image](https://github.com/wy8933/hfoss2024-blogs/assets/112401719/b5559da3-e13e-4888-aa18-3e7a4ec5c708)
 
