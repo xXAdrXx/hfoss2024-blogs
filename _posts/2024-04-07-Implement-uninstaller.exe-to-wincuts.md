@@ -29,9 +29,6 @@ What's also cool is that none of the shortcuts will go deep enough in your syste
 #Why I picked Wincuts
 I chose to contribute to WinCuts because it's something that could improve my productivity when developing on Windows. Since there are several issues that I can fix, I decided to help this project out.
 
-# Relevance from Comm Arch Experiences
-From my previous HFOSS (IGME-582) experiences in Comm Arch assignments, we were tasked with investigating existing open-source projects of different sizes. We collected much information, including onboarding processes, contribution guidelines, and recommending projects for a specific skill level. These skills were relevant in my selection of this project, as I found an issue tailored to my skills. 
-
 #Resources
 The project provided both [contribution guide](https://github.com/LyubomirT/wincuts/blob/main/CONTRIBUTING.md), [code of conduct](https://github.com/LyubomirT/wincuts/blob/main/CODE_OF_CONDUCT.md) and the license this project uses is BSD-3-Clause license.
 Since this is a relatively new project, there are few participants, but the owner of the project is very active; he can always respond to you within a day, from my experience.
@@ -62,3 +59,6 @@ LyubomirT, who is also the owner of the project, quickly responded to the discus
 # Pull Request
 As of the writing of this blog post, the PR opened has not been accepted yet since there are still some small problems with my solution, which I am still working on now, 
 [Link to pull request](https://github.com/LyubomirT/wincuts/pull/10)
+
+# Conclusion
+Overall, I had a good experience working on this issue and project. While the specific issue I chose to work on was pretty simple to do, this was a great experience for me because it was the first time I contributed to open source, even if this was a very small and not well-known project. 
