@@ -27,22 +27,22 @@ As of now, WinCuts lets you set up custom keyboard shortcuts for running shell/c
 What's also cool is that none of the shortcuts will go deep enough in your system to cause any damage. They're all running in the context of the user and are limited to the user's permissions. And, of course, the shortcuts are only active within the app and hence won't interfere with any other shortcuts you might have set up (basically, you can't accidentally override a system shortcut).
 
 #Why I picked Wincuts
-I chose to contribute to WinCuts because it's something that could improve my productivity when developing on Windows. Since there are several issues that I can fix, I decided to help this project out.
+I chose to contribute to WinCuts because it could improve my productivity when developing on Windows. Since I can fix several issues, I decided to help this project out.
 
 #Resources
 The project provided both [contribution guide](https://github.com/LyubomirT/wincuts/blob/main/CONTRIBUTING.md), [code of conduct](https://github.com/LyubomirT/wincuts/blob/main/CODE_OF_CONDUCT.md) and the license this project uses is BSD-3-Clause license.
-Since this is a relatively new project, there are few participants, but the owner of the project is very active; he can always respond to you within a day, from my experience.
+Since this is a relatively new project, there are few participants, but the project's owner is very active; he can always respond to you within a day, from my experience.
 
-One negative side of this project is the need for more documentation. This does make it difficult to understand the project at the beginning, but since this is a small project and the task I chose to do didn't interact too much with the main part of software itself, so this didn't cause too much problem when I am developing.
+One negative side of this project is the need for more documentation. This does make it difficult to understand the project at the beginning, but since this is a small project and the task I chose to do didn't interact too much with the main part of the software itself, this didn't cause too many problems when I was developing.
 
 # The Issue
-The issue that I investigated in this project was Creating an uninstaller for the app. Instead of the cleanup file, an uninstaller can be created that will make sure everything is done swiftly. Also, it may help people who aren't quite tech-savvy avoid confusion and any potential mistakes.
+The issue I investigated in this project was Creating an uninstaller for the app. Instead of the cleanup file, an uninstaller can be created to ensure everything is done swiftly. Also, it may help people who need to be more tech-savvy avoid confusion and potential mistakes.
 [issue](https://github.com/LyubomirT/wincuts/issues/2)
 
 ![Screenshot 2024-04-07 131600](https://github.com/wy8933/hfoss2024-blogs/assets/112401719/c48b0db1-2885-4440-9b6c-709a1237023e)
 
 # Contribution process
-First, I started by reading the current code of the project and understanding what library was used. Then I download the libraries that was needed for the project.
+First, I read the project's current code and understood what libraries were used. Then, I downloaded the libraries needed for the project.
 ![image](https://github.com/wy8933/hfoss2024-blogs/assets/112401719/b5559da3-e13e-4888-aa18-3e7a4ec5c708)
 
 Then, I coded what an uninstaller would need, including the UI, uninstalling feature, and the feature of asking the user to quit the main application to ensure the uninstaller would function properly.
@@ -61,4 +61,4 @@ As of the writing of this blog post, the PR opened has not been accepted yet sin
 [Link to pull request](https://github.com/LyubomirT/wincuts/pull/10)
 
 # Conclusion
-Overall, I had a good experience working on this issue and project. While the specific issue I chose to work on was pretty simple to do, this was a great experience for me because it was the first time I contributed to open source, even if this was a very small and not well-known project. 
+Overall, I had a good experience working on this issue and project. While the specific issue I chose to work on was pretty simple, this was a great experience for me because it was the first time I contributed to open source, even if this was a very small and not well-known project. 
