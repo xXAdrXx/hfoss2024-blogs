@@ -49,6 +49,7 @@ First, I started by reading the current code of the project and understanding wh
 ![image](https://github.com/wy8933/hfoss2024-blogs/assets/112401719/b5559da3-e13e-4888-aa18-3e7a4ec5c708)
 
 Then, I coded what an uninstaller would need, including the UI, uninstalling feature, and the feature of asking the user to quit the main application to ensure the uninstaller would function properly.
+
 ![image](https://github.com/wy8933/hfoss2024-blogs/assets/112401719/67540ed8-3630-4ff9-9ae0-1167a6e1287e)
 
 # Blocker
