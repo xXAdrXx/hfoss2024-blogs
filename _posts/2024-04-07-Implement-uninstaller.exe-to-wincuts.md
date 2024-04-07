@@ -38,6 +38,7 @@ Since this is a relatively new project, there aren't many participants, but the 
 The issue that I investigated in this project was Creating an uninstaller for the app. Instead of the cleanup file, an uninstaller can be created that will make sure everything is done swiftly. Also, it may help people who aren't quite tech-savvy avoid confusion and any potential mistakes.
 ![issue](https://github.com/LyubomirT/wincuts/issues/2)
 
+![Screenshot 2024-04-07 131600](https://github.com/wy8933/hfoss2024-blogs/assets/112401719/c48b0db1-2885-4440-9b6c-709a1237023e)
 
 So, I forked the repository and opened a branch and made the appropriate changes, which lead to me making a pull request. Before pushing anything, I made sure the code ran without issues on my own machine and when containerized with the Dockerfile, and everything built and ran without new errors. 
 
