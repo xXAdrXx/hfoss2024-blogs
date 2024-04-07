@@ -12,7 +12,8 @@ author: Billy Guzik
 Godot is a free and open source game engine available for free download from [Godot](https://godotengine.org/). I picked it for my project because I have been working in Godot for the past 2 semesters, and I find the engine to be fun.
 
 ## Comm Arch Experience
-My Comm Arch experience told me that this would be a good project to contribute to. Firstly, another group did a presentation on this project and gave it a recommendation. They also have a large amount of resources available in their [GitHub](https://github.com/godotengine), [Website](https://godotengine.org/), and [Docs Website](https://docs.godotengine.org/en/stable/), with sufficient onboarding to contribute.
+My Comm Arch experience told me that this would be a good project to contribute to. Firstly, another group did a presentation on this project and gave it a recommendation. They also have a large amount of resources available in their [GitHub](https://github.com/godotengine), [Website](https://godotengine.org/), and [Docs Website](https://docs.godotengine.org/en/stable/) with sufficient onboarding to contribute. The most helpful information was on their docs site, captured in the image below.
+
 ![Guidelines](../assets/2024-04-07-Godot-Documentation-Improvement/guidelines.png)
 
 ## Picking My Issue
@@ -35,4 +36,4 @@ I opened GitHub Desktop, went to the Branch tab, and proceeded to fetch from ups
 I still had commits that weren't mine in the branch, and now had to breakout GitBash to remove them. I opened GitBash, rebased my branch again, this time dropping the commits that were still lingering around, and pushed again. While doing that, I accidentally merged my local branch into upstream, and had to repeat that process one more time. Now, I was finally done.
 ![Complete](../assets/2024-04-07-Godot-Documentation-Improvement/complete.png)
 
-I had done it, my first contribution to an open source project! It felt good when it was over, and I'm glad I had as many issues as I did as it taught me how to deal with them in the future, and I'm sure that knowledge will be useful when I am working on my contribution.
+I did it! my first contribution to an open source project! It felt good when it was over, and I'm glad I had as many issues as I did as it taught me how to deal with them in the future, and I'm sure that knowledge will be useful when I am working on my contribution.
