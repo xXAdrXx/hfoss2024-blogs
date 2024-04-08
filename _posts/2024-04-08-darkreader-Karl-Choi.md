@@ -31,10 +31,14 @@ The github community works together mainly to fix specific site issues, add new 
 # Comm Arch Analysis
 
 - The last commit was 3 days ago, so the project is pretty active.
+- There are over 1200 contributors
 - The contribution doc was pretty detailed and explained step by step how to contribute.
 - The project has a license, readme, and code of conduct
 - There are 1,000+ open issues, so there are many things that can be fixed or contributed to
+![Last commit](https://cdn.discordapp.com/attachments/593856325641830489/1226861046820634644/image.png?ex=66264e63&is=6613d963&hm=c149d81a7a3eaf6ad427d16525c9b0bf469d2eaf8a1982c3e75219631944d2d2&)
+![Contributors](https://cdn.discordapp.com/attachments/593856325641830489/1226861977620582450/image.png?ex=66264f41&is=6613da41&hm=df4493e986d2f4eed960e928ce7fd0401106df138f986232294fa4d3a8b75b82&)
 ![Important docs](https://cdn.discordapp.com/attachments/593856325641830489/1226854241537359962/image.png?ex=6626480d&is=6613d30d&hm=df2e5a3c00a4971078e754586ad7452677cb07a125b2dade5d26fdd12997f0cb&)
+![Issues](https://cdn.discordapp.com/attachments/593856325641830489/1226861411767029760/image.png?ex=66264eba&is=6613d9ba&hm=e82fe185558faa8cb56ca6b1993feef3b1d4f8aa0f7c2ab551dbd412d03c536b&)
 
 # The issue I picked
 
@@ -44,6 +48,9 @@ Contributions to the Dark Reader Github are mainly specific site fixes, so the i
 # How I went about pursuing it
 
 I read the contributing doc on the Github for step by step instructions on how to fix specific issues on websites. I was then able to make the texts/icons visible through the extension's dev tools. One issue I had was trying to work with the extension's specific code formatting. In addition, most of the project is coded in TypeScript, which I don't really have experience in. However, I was eventually able to figure it out. I submitted a pull request, so I'm currently waiting for that to go through. There are only 5 open pull requests (including mine) and 7,000+ closed pull requests, so pull requests seem to be reviewed pretty frequently.
+![Dev Tools](https://cdn.discordapp.com/attachments/593856325641830489/1226861599743148052/image.png?ex=66264ee7&is=6613d9e7&hm=c74825d1939074004ecc962ef24016912cc5ba958bad133069827a3fa8a6a74e&)
+![Languages](https://cdn.discordapp.com/attachments/593856325641830489/1226861836498898964/image.png?ex=66264f1f&is=6613da1f&hm=cc20507f2e82323edbb22a507e3de9b2f79ec6c6a5ea6577fbbff0b5a5d9435e&)
+![Pull Requests](https://cdn.discordapp.com/attachments/593856325641830489/1226862174408802305/image.png?ex=66264f70&is=6613da70&hm=ddfb186c3cf7bcff15157a00141ad96f50713dca41ff697ac538839687331ad9&)
 
 # Before my fix
 ![Before1](https://images-ext-1.discordapp.net/external/t85oJlXFFEgCYKneQUw1g8LiIOjdGPGDvImLXt0638Y/https/github.com/darkreader/darkreader/assets/157659446/df2f34fa-3791-4add-88ab-9610fe948cd6?format=webp&width=1439&height=532)
