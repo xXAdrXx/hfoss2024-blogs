@@ -22,14 +22,14 @@ author: Weijie Ye
 
 WinCuts is a Windows-native (via Qt) tool for easily setting up and managing custom keyboard shortcuts. It's designed for usage simplicity and is aimed at anyone who wants to save time and increase productivity by using keyboard shortcuts.
 
-#How it works
+# How it works
 As of now, WinCuts lets you set up custom keyboard shortcuts for running shell/cmd commands that get launched whenever the shortcut is activated. It's useful if you need to launch specific commands frequently and want to save time by using a keyboard shortcut instead of typing the command every single time.
 What's also cool is that none of the shortcuts will go deep enough in your system to cause any damage. They're all running in the context of the user and are limited to the user's permissions. And, of course, the shortcuts are only active within the app and hence won't interfere with any other shortcuts you might have set up (basically, you can't accidentally override a system shortcut).
 
-#Why I picked Wincuts
+# Why I picked Wincuts
 I chose to contribute to WinCuts because it could improve my productivity when developing on Windows. Since I can fix several issues, I decided to help this project out.
 
-#Resources
+# Resources
 The project provided both [contribution guide](https://github.com/LyubomirT/wincuts/blob/main/CONTRIBUTING.md), [code of conduct](https://github.com/LyubomirT/wincuts/blob/main/CODE_OF_CONDUCT.md) and the license this project uses is BSD-3-Clause license.
 Since this is a relatively new project, there are few participants, but the project's owner is very active; he can always respond to you within a day, from my experience.
 
