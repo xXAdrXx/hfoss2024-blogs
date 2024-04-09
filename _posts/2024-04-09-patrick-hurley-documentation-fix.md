@@ -7,73 +7,43 @@ layout: post
 
 # Uncomment only one of the below categories
 categories: 
-#- Bug Fix
+- Bug Fix
 #- Contribution
 
 
 # Enter your name below
-author: Adrian Edwards
+author: Patrick Hurley
 ---
 
-For my contribution, I decided to create this website and post this sample blog post. I decided to do this because I wanted to help provide a blogging platform for SJ to allow the students of HFOSS to have a place to submit their blog posts for the last half of the semester.
+## What is MonoGame?
+For my contribution, I decided to contribute to the MonoGame game engine.  MonoGame is a framework built off of Microsoft's now deprecated XNA Framework, and has been used to create many titles such as Celeste, Stardew Valley, and Barotrauma.  I decided to contribute to MonoGame because I've used it before, for a group game project I made in my freshman year, giving me some familiarity with how the engine works.  It also has a large amount of issue labels for easier categorizing and searching, with "Good First Issues" being the one I primarily used.
 
-This blog post can be used in several ways:
-- Reading it should provide a tutorial explaining some of the basics of how to use this blog for HFOSS students who will be adding posts to it 
-- Looking at its source code can provide a template that can be reused to help kickstart the writing of new blog posts, or to demonstrate some examples of how to use markdown
-<!-- - Demonstrate (to some extent) what a well-written, detailed blog post looks like. (That said this post will probably be longer than is expected for the actual HFOSS assignments because it may contain a lot of tutorial content)  -->
-- As documentation for any future readers who are interested in the rationale behind the existence of this site (such as Future HFOSS students, TA's, or FOSSRIT org admins)
+## Mini Comm Arch evaluation
 
-## What is this site?
-This is a site that is built using Jekyll, a tool that allows you to build websites. It is natively supported by [GitHub pages](https://docs.github.com/en/pages) - a free website hosting service provided by GitHub. It is quite commonly used by developers to create their own personal or portfolio websites.
+MonoGame is a large and active repository comprised of a few dedicated multi-commit contributors and a large volume of drive by contributors.  The project's [code of conduct](https://github.com/MonoGame/MonoGame/blob/develop/CONTRIBUTING.md) is both easy to find and easy to comprehend, and the community as a whole seems very kind.  The project itself is growing in popularity, too, and is run as a Federation.
 
-## Why not something else, like WordPress?
-HFOSS is a class designed to help teach some of the basics behind open source. By using git and GitHub to submit the blog posts, there are more opportunities to practice using the tools that are used by real-world projects. Additionally, the WordPress sites from previous classes are no longer around and are hard to point to as examples that are particularly positive or negative.
+## Choosing an Issue
+To find what issue I wanted to contribute to, I first checked the issues under the Good First Issues label, and settled on [Issue #4856](https://github.com/MonoGame/MonoGame/issues/4586) because it seemed like it wouldn't require an obscene amount of time to fix.  
 
-## How do I use it?
-This repository may look like a mess of many, many files, but realistically the only files you will likely care about as an HFOSS student are in the `_posts` folder. This is where you will upload your blog posts. The basic process goes something like this:
+![screenshot of Issue #4856](https://cdn.discordapp.com/attachments/1227366070466248706/1227366080524324874/image.png?ex=662824bc&is=6615afbc&hm=368e82f92effbcef78ee7de68183b765bc58c5bc2d9ef9df8e51c94aa143b361&)
 
-1. Log into your GitHub account
-2. Create a fork of this repository and clone it to your computer if that's how you prefer to work (feel free to try a few different ways)
-3. Create a new branch on your fork starting from the `main` branch
-4. Find the `_posts` folder and create a copy of this sample post, giving it a new, dated filename (Jekyll requires blog post files to be named according to the following format `YEAR-MONTH-DAY-title`) and changing the contents accordingly (ideally making commits and pushing to your new branch as you go)
-5. [Optional] You can also configure github pages (through the settings tab of your forked repository) to host a website site based on your new branch, so you can preview your changes and make sure your post looks the way you want. There are also ways to assemble the website on your computer if you prefer a more hands-on process (Ask in class or come to office hours if you want to learn more about this!) 
-6. When you are ready to submit, create a "pull request" back to the original repository. This will take the contents of your new branch and submit it as a proposed change to the main class website. Once approved, your blog post will be added to the main class web page.
-7. [Recommended] Whenever the main class webpage updates, it may be helpful to also update the main branch of your fork (github provides a handy "sync" button) so that you can stay up to date
+Little did I know, it also required knowledge of 3d transformations and matrices, which were the one topic in calculus that I almost failed.  Not really understanding what the issue actually required me to document, I had the idea to look for other documentation-related issues, as I had already read every issue marked Good First Issues, and at the bottom of the conversation under Issue #4856 was a link to a project in the repository named [Improving the documentation and samples](https://github.com/MonoGame/MonoGame/projects/4#card-82244161).  Looking through the issues there, I found [Issue #4804](https://github.com/MonoGame/MonoGame/issues/4804), which is about writing documentation for a bug concerning how MonoGame's vsync settings interact with end user graphics driver hacks that can force different types of vsync.
 
+![screenshot of Issue #4804](https://cdn.discordapp.com/attachments/1227366070466248706/1227378654237950114/image.png?ex=66283072&is=6615bb72&hm=b172ceaa83f0ea6885a9e84198632e422c1b7d653ea93944057d3e9c3b6ba3c0&)
 
+## How was it 'fixed?'
+As the issue I chose was related to writing documentation for an already discovered and diagnosed issue with graphics card drivers, I didn't have much to actually code myself.  I updated the \<remarks\> tag inside the comment for the SynchronizeWithVerticalRetrace method to specify that it could cause issues like multiple update calls per draw call, and that was it.  Then came the roadblock.  Or at least, the part I way over-analyzed, only to find out it was all unnecessary.
 
-## More Markdown features
-In addition to the formatting used so far in this document, Markdown offers several other things that may be useful to blog posts. 
+![screenshot of my commit](https://cdn.discordapp.com/attachments/1227366070466248706/1227381682848661524/image.png?ex=66283344&is=6615be44&hm=48bf8dcda68a89dcdcc9180aa2b7b1d0f60569da8a62c25b3520f3aeb8c50416&)
 
-### Images
+I had the changes in code pushed to my fork, but I wanted to know how to get those changes reflected in the project's documentation too, so I went there.  First I checked the [readme](https://github.com/MonoGame/docs.monogame.github.io/blob/main/README.md) of the documentation repo, which strangely didn't link to the repo's contributing page.  Because I didn't know the repo had one, I spent the next hour looking through the code in the repositiory trying to find out what I would need to change to add my part to the documentation, also checking the [framework that the documentation was built off of, docfx](https://dotnet.github.io/docfx/).  Still couldn't figure it out, until I noticed the [contributing.md](https://cdn.discordapp.com/attachments/1227366070466248706/1227383958086615171/image.png?ex=66283563&is=6615c063&hm=cbd3c134ff3d413017987031f663802efba795617fc17239834ff88d30113004&) file tucked away in the root folder of the repo, which mentions that the documentation is automatically "rebuilt when the code changes and is published nightly to the website."  So that was a fun way to spend an hour.  After that, I made a [pull request](https://github.com/MonoGame/MonoGame/pull/8269), and within a day recieved an approval from one of the project's maintainers and most active contributors, dellis1972.
 
-![a meme depicting a cartoon person screaming "OPEN SOURCE"](https://ankitrokdeonsns.github.io/assets/img/open_source.jpeg)
+![screenshot of my pull request and approval](https://cdn.discordapp.com/attachments/1227366070466248706/1227385141941243986/image.png?ex=6628367d&is=6615c17d&hm=5e9969124e407134456640de01c229d675f3da35baf2810ed4e9c020a7596e43&)
+
+As of April 9th at 6pm, my change has not yet been merged into MonoGame's development branch, and judging by how old some other pull requests are, it's anybodies guess how long it may stay that way.
 
 
-[Here](https://www.markdownguide.org/basic-syntax/#images-1) is a link to more documentation on markdown images.
 
-### Tables
-
-| Item         | Price    | # In stock |
-| ------------ | -------- | ---------- |
-| Juicy Apples | 1.99     | *7*        |
-| Bananas      | **1.89** | 5234       |
-
-[Here](https://www.markdownguide.org/extended-syntax/#tables) is a link to more documentation on markdown tables.
-
-## More Jekyll Features
-Jekyll can also provide some formatting and other useful features. Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. Here are some notable examples:
-
-
-### Code snippets
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
 
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
