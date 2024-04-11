@@ -19,7 +19,19 @@ author: Swapnil Acharjee
 Psst is a custom built client for Spotify made using Rust and the Druid libraries. It boasts having better performance than the native Spotify client that is built on Electron, a framework critiqued mostly on its resource utilization. Psst accomplishes this by being written entirely in Rust, a lower level programming language, and connects to the Spotify WebAPI using your account to playback songs from the site.
 
 ## Why Psst?
-I chose this application for a few reasons. The first being that I like the application for its sensible resource utilization. I use a laptop with poor battery life, and Electron applications, like Spotify, have reduced the battery life of my laptop significantly in the past. This led to me looking for alternatives to using Electron apps, and Psst was the best alternative I found for Spotify. I also 
+I chose this application for the bug fix for a few reasons. The first being that I like the application for its sensible resource utilization. I use a laptop with poor battery life, and Electron applications, like Spotify, have reduced the battery life of my laptop significantly in the past. This led to me looking for alternatives to using Electron apps, and Psst was the best alternative I found for Spotify.
+The second reason I chose this application was because of the fact it was written in Rust. Rust seems to be skyrocketing in growth so I feel like experience with the language would be valuable for me, as I am studying software engineering.
+The final reason was simple, this community seems active. This shown by their correspondence in the active issues, and the frequent commits and PRs being reviewed. 
+
+## What to fix, what to fix?
+There were many issues and enhancements to choose from, but one caught my eye. #449, where if an audio device is disconnected, Psst no longer outputs audio without a restart. I thought this would be a good choice as much of the other issues seem to be problems on inaccessible operating systems (macOS), or are problems that integrate with other systems. Also, there didn't seem to be anyone lo
+
+## Off to a rough start.
+To begin, I needed to find where the issue was occuring. Luckily, the one who reported this issue provided a log when the bug occurred. 
+```
+[2024-01-18T14:11:57Z ERROR psst_core::audio::output::cpal] audio output error: The requested device is no longer available. For example, it has been unplugged.
+```
+This error pointed me directly to the right place. I was able to see the `cpal.rs` file to get a better idea of what is happening. 
 
 ## Why not something else, like WordPress?
 HFOSS is a class designed to help teach some of the basics behind open source. By using git and GitHub to submit the blog posts, there are more opportunities to practice using the tools that are used by real-world projects. Additionally, the WordPress sites from previous classes are no longer around and are hard to point to as examples that are particularly positive or negative.
