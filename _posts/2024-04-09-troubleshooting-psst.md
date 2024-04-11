@@ -24,63 +24,28 @@ The second reason I chose this application was because of the fact it was writte
 The final reason was simple, this community seems active. This shown by their correspondence in the active issues, and the frequent commits and PRs being reviewed. 
 
 ## What to fix, what to fix?
-There were many issues and enhancements to choose from, but one caught my eye. #449, where if an audio device is disconnected, Psst no longer outputs audio without a restart. I thought this would be a good choice as much of the other issues seem to be problems on inaccessible operating systems (macOS), or are problems that integrate with other systems. Also, there didn't seem to be anyone lo
+There were many issues and enhancements to choose from, but one caught my eye. [#449](https://github.com/jpochyla/psst/issues/449), where if an audio device is disconnected, Psst no longer outputs audio without a restart. I thought this would be a good choice as much of the other issues seem to be problems on inaccessible operating systems (macOS), or are problems that integrate with other systems. Also, there didn't seem to be anyone lo
 
-## Off to a rough start.
+## Off to the races.
 To begin, I needed to find where the issue was occuring. Luckily, the one who reported this issue provided a log when the bug occurred. 
-```
+{% highlight ruby %}
 [2024-01-18T14:11:57Z ERROR psst_core::audio::output::cpal] audio output error: The requested device is no longer available. For example, it has been unplugged.
-```
+{% endhighlight %}
 This error pointed me directly to the right place. I was able to see the `cpal.rs` file to get a better idea of what is happening. 
 
-## Why not something else, like WordPress?
-HFOSS is a class designed to help teach some of the basics behind open source. By using git and GitHub to submit the blog posts, there are more opportunities to practice using the tools that are used by real-world projects. Additionally, the WordPress sites from previous classes are no longer around and are hard to point to as examples that are particularly positive or negative.
+## In over my head...
+I found the implementation for the `Stream` object, and then I realized how out of depth I was for this bug. I used the debugger to discover where the `Stream` was created and found it within a playback controller. The issue with attempting to fix the issue is that it requires changing the way that audio is fundamentally handled in this application, adding new features like audio switching. I neither know rust nor am I the most familiar with this codebase, so I decided to back off and let someone else handle this problem. I provided a comment regarding a way to replicate the issue and what might be needed to resolve this issue.
 
-## How do I use it?
-This repository may look like a mess of many, many files, but realistically the only files you will likely care about as an HFOSS student are in the `_posts` folder. This is where you will upload your blog posts. The basic process goes something like this:
+![screenshot of my comment](../assets/2024-04-09-troubleshooting-psst/report.png)
 
-1. Log into your GitHub account
-2. Create a fork of this repository and clone it to your computer if that's how you prefer to work (feel free to try a few different ways)
-3. Create a new branch on your fork starting from the `main` branch
-4. Find the `_posts` folder and create a copy of this sample post, giving it a new, dated filename (Jekyll requires blog post files to be named according to the following format `YEAR-MONTH-DAY-title`) and changing the contents accordingly (ideally making commits and pushing to your new branch as you go)
-5. [Optional] You can also configure github pages (through the settings tab of your forked repository) to host a website site based on your new branch, so you can preview your changes and make sure your post looks the way you want. There are also ways to assemble the website on your computer if you prefer a more hands-on process (Ask in class or come to office hours if you want to learn more about this!) 
-6. When you are ready to submit, create a "pull request" back to the original repository. This will take the contents of your new branch and submit it as a proposed change to the main class website. Once approved, your blog post will be added to the main class web page.
-7. [Recommended] Whenever the main class webpage updates, it may be helpful to also update the main branch of your fork (github provides a handy "sync" button) so that you can stay up to date
+## Trying to help elsewhere
+I went to look for more issues to help with, and I found issue [#466](https://github.com/jpochyla/psst/issues/466), where some odd text was being displayed in the place of English.
 
+![screenshot of app showing odd text](../assets/2024-04-09-troubleshooting-psst/text_bug.png)
 
+I noticed quickly that the text was Arabic, and that Arabic forces text to be right-aligned, due to the language being read from right-to-left. I built the version that the user was currently on to see if I was able to replicate the issue but unfortunately couldn't. I decided to add a comment there as well. 
 
-## More Markdown features
-In addition to the formatting used so far in this document, Markdown offers several other things that may be useful to blog posts. 
+![screenshot of another of my comments](../assets/2024-04-09-troubleshooting-psst/arabic_comment.png)
 
-### Images
-
-![a meme depicting a cartoon person screaming "OPEN SOURCE"](https://ankitrokdeonsns.github.io/assets/img/open_source.jpeg)
-
-
-[Here](https://www.markdownguide.org/basic-syntax/#images-1) is a link to more documentation on markdown images.
-
-### Tables
-
-| Item         | Price    | # In stock |
-| ------------ | -------- | ---------- |
-| Juicy Apples | 1.99     | *7*        |
-| Bananas      | **1.89** | 5234       |
-
-[Here](https://www.markdownguide.org/extended-syntax/#tables) is a link to more documentation on markdown tables.
-
-## More Jekyll Features
-Jekyll can also provide some formatting and other useful features. Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. Here are some notable examples:
-
-
-### Code snippets
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
+## Conclusion
+I realized that I was out of my depth and over ambitious for my first open-source contribution. However I have learned about how Rust works better, and I gained more experience working through a debugger. I do wish that I was wore knowledgable about Rust however, as it would be an incredible improvement on the application to allow dynamic audio events. I will try to contribute in the future, but I probably should interact with easier to work with systems before I return to this project. 
