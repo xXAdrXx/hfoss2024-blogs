@@ -30,7 +30,7 @@ The Area Owners/teams can assist as well with questions about certain sections. 
 I choose my Issue by starting very small. I viewed the 'good-first-issue' tag.I had no experince with godot code or coding within godot and 
 so when looking through the issues I found a bug that was centered around a  built-in CAMERA_VISIBLE_LAYERS Shader being undocumented according to the issue, this Shader was added back in 2022 but nobody had documented yet. I felt like that was something I could fix and so I went right to it
 
-![image of the issue](/hfoss2024-blogs/posts/assets/2024-04-18-Adrian_Marquez_godot_docfix/Image_of_issue.png)
+![image of the issue](../assets/2024-04-18-Adrian_Marquez_godot_docfix/Image_of_issue.png)
 ## Was I successful?
 The fix was simple especially with the guidence they give to people who want to fix or add any documentation and so I went into the appropriate file within the repository and added the necessary change
 
