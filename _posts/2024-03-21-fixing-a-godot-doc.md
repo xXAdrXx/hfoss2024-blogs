@@ -24,7 +24,7 @@ I recently did a Comm Arch about godot and how easy it is to make edits, so I th
 My Comm Arch experience told me that this would be a good project to contribute to. Godot is heavily documented as is its contribution process & onboarding
 The Area Owners/teams can assist as well with questions about certain sections. They even had instructions for making changes to anything such as page editing documentation(which is shown below)
 
-![page editing documentation edit](assets/2024-04-18-Adrian_Marquez_godot_docfix/page_edit_documentation.png)
+![page editing documentation edit](../assets/2024-04-18-Adrian_Marquez_godot_docfix/page_edit_documentation.png)
 
 ## The Issue
 I choose my Issue by starting very small. I viewed the 'good-first-issue' tag.I had no experince with godot code or coding within godot and 
