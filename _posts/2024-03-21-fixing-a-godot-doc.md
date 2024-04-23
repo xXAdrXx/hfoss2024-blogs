@@ -34,15 +34,15 @@ so when looking through the issues I found a bug that was centered around a  bui
 ## Was I successful?
 The fix was simple especially with the guidence they give to people who want to fix or add any documentation and so I went into the appropriate file within the repository and added the necessary change
 
-![image of the fix](/hfoss2024-blogs/posts/assets/2024-04-18-Adrian_Marquez_godot_docfix/Image_of_fix.png)
+![image of the fix](../posts/assets/2024-04-18-Adrian_Marquez_godot_docfix/Image_of_fix.png)
 
 all I had to do affter that was make a pull request
 I then got a message telling me I was trying to commit into the wrong repository but they told me to commit to main and all would be good.And so I did
 
-![Communication when pull requst](/hfoss2024-blogs/posts/assets/2024-04-18-Adrian_Marquez_godot_docfix/Communication_when_pulling.png)
+![Communication when pull requst](../assets/2024-04-18-Adrian_Marquez_godot_docfix/Communication_when_pulling.png)
 
 ## Was I successful now?
 I have no clue. Since I've made the fix It still hasn't been added the the main branch. So maybe there is a reason why the documentation hasn't been added this entire time. But 
 I should've expected this given that during my comm Arch, I learned that Godot has a lot of issues that have been opened and still haven't been fixed yet, So I can only assume my fix won't be added anytime soon
 
-![Still Waiting](/hfoss2024-blogs/posts/assets/2024-04-18-Adrian_Marquez_godot_docfix/StillWaitng.png)
+![Still Waiting](../assets/2024-04-18-Adrian_Marquez_godot_docfix/StillWaitng.png)
