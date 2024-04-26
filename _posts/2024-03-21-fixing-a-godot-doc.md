@@ -34,7 +34,7 @@ so when looking through the issues I found a bug that was centered around a  bui
 ## Was I successful?
 The fix was simple especially with the guidence they give to people who want to fix or add any documentation and so I went into the appropriate file within the repository and added the necessary change
 
-![image of the fix](../posts/assets/2024-04-18-Adrian_Marquez_godot_docfix/Image_of_fix.png)
+![image of the fix](../assets/2024-04-18-Adrian_Marquez_godot_docfix/Image_of_fix.png)
 
 all I had to do affter that was make a pull request
 I then got a message telling me I was trying to commit into the wrong repository but they told me to commit to main and all would be good.And so I did
